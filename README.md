@@ -6,8 +6,8 @@ It's still under development.
 
 ## Installation
 
-- install node.js, if not installed
-- copy folder with this project (proxy-translation-server)
+- install Node.js, if not installed yet.
+- copy the folder with this project (proxy-translation-server)
 
 ## Running: run in terminal, like:
 ```bash
