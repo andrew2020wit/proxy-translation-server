@@ -4,16 +4,15 @@ This is intended for a local usage.
 
 It's still under development.
 
+## Installation
 
-## Running the app
+- install node.js, if not installed
+- copy folder with this project (proxy-translation-server)
 
+## Running: run in terminal, like:
 ```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+node C:\some-folder\proxy-translation-server\dist\main
 ```
+
+
+
