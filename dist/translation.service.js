@@ -16,7 +16,10 @@ let TranslationService = class TranslationService {
             options.from = params.from;
         }
         const res = await (0, google_translate_api_1.translate)(params.text, options);
-        return { original: params.text, translation: res.text, all: res };
+        const result = { original: params.text, translation: res.text, all: res };
+        if (res?.raw?.confidence)
+            result.confidence = res.raw.confidence;
+        return result;
     }
 };
 exports.TranslationService = TranslationService;

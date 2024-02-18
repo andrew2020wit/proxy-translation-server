@@ -15,6 +15,10 @@ export class TranslationService {
 
     const res = await translate(params.text, options);
 
-    return { original: params.text, translation: res.text, all: res };
+    const result: TranslationResponseInterface= { original: params.text, translation: res.text, all: res };
+
+    if (res?.raw?.confidence) result.confidence = res.raw.confidence;
+
+    return result;
   }
 }
