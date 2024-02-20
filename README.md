@@ -16,3 +16,10 @@ node C:\some-folder\proxy-translation-server\dist\main
 It runs main.js file.
 
 [autostart for Windows](https://stackoverflow.com/questions/76766511/how-do-i-automatically-have-a-command-run-from-my-windows-10-command-prompt-when)
+
+## (Re)build
+
+- install [nest.js](https://docs.nestjs.com/)
+- run ```nest build``` in 'proxy-translation-server'-folder.
+
+you can also use ```nest start```
