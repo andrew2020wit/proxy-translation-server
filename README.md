@@ -23,3 +23,7 @@ It runs main.js file.
 - run ```nest build``` in 'proxy-translation-server'-folder.
 
 you can also use ```nest start```
+
+## Licence
+
+MIT licence.
