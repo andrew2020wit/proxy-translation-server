@@ -3,4 +3,5 @@ export interface TranslationResponseInterface {
     translation: string;
     all: any;
     confidence?: number;
+    apiVersion?: number;
 }

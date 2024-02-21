@@ -9,6 +9,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.TranslationService = void 0;
 const common_1 = require("@nestjs/common");
 const google_translate_api_1 = require("@vitalets/google-translate-api");
+const api_version_const_1 = require("./api-version.const");
 let TranslationService = class TranslationService {
     async getTranslation(params) {
         const options = { to: params.to };
@@ -16,7 +17,12 @@ let TranslationService = class TranslationService {
             options.from = params.from;
         }
         const res = await (0, google_translate_api_1.translate)(params.text, options);
-        const result = { original: params.text, translation: res.text, all: res };
+        const result = {
+            original: params.text,
+            translation: res.text,
+            all: res,
+            apiVersion: api_version_const_1.apiVersionConst
+        };
         if (res?.raw?.confidence)
             result.confidence = res.raw.confidence;
         return result;

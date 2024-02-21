@@ -24,6 +24,12 @@ It runs main.js file.
 
 you can also use ```nest start```
 
+## You can change app port, in you want (3007 is default).
+
+- go to main.ts
+- change const ```appPort```
+- build app
+
 ## Licence
 
 MIT licence.
